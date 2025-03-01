@@ -1,0 +1,125 @@
+body {
+    background-color: rgb(212, 122, 122);
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed; 
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center; 
+}
+
+th {
+    font-weight: bold;
+}
+
+#dataTable {
+    border-collapse: separate;
+    width: 50%;
+    border-spacing: 0;
+    border-radius: 200px;
+    margin: 0 auto;
+    table-layout: fixed;
+}
+
+#dataTable th, #dataTable td {
+    color: white;
+    border: 1px solid brown;
+    padding: 10px;
+    text-align: center;
+}
+
+#dataTable th:nth-child(2), 
+#dataTable td:nth-child(2) {
+    width: 80px; 
+}
+
+td span {
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+td span:hover {
+    transform: scale(1.2); 
+    color: red;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; 
+    position: relative; 
+}
+
+.label {
+    position: relative;
+    margin-bottom: 5px; 
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.search_box {
+    width: 300px;
+    height: 30px;
+    border: 2px solid rgb(170, 71, 71);
+    border-radius: 2px;
+    background-color: rgb(170, 71, 71);
+    color: white;
+}
+
+.search_box::placeholder {
+    color: white;
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+    .search_box {
+        width: 90%; 
+    }
+    
+    table {
+        width: 100%; 
+    }
+
+    .label {
+        font-size: 12px; 
+        top: 8px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .search_box {
+        width: 80%; 
+    }
+    
+    table {
+        width: 90%; 
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .search_box {
+        width: 70%;
+    }
+    
+    table {
+        width: 80%;
+    }
+}
